@@ -35,6 +35,13 @@ img {
 
 /* navbar */
 
+.navbar {
+    background: var(--color-white);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
 .navbar .container {
     display: flex;
     padding-top: 60px;
@@ -766,6 +773,7 @@ img {
 
 .news {
     background: var(--brand_color_footer);
+    padding-bottom: 50px;
 }
 
 .news_heading_box {
@@ -831,6 +839,7 @@ img {
     color: var(--color-black);
     font-size: 18px;
     font-weight: 700;
+    text-transform: capitalize;
 }
 
 .news_item_creater_info p {
@@ -861,6 +870,105 @@ img {
     font-weight: 500;
 }
 
+/* footer sign up */
+
+.footer_signUp {
+    background: var(--brand-color-primary);
+    padding-top: 50px;
+}
+
+.footer_signUp_heading_box {
+    display: flex;
+    align-items: center;
+}
+
+.footer_signUp_heading {
+    color: var(--color-white);
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding-right: 20px;
+}
+
+.footer_signUp_heading_line {
+    background: var(--color-white);
+    height: 2px;
+    width: 73px;
+    margin-top: 7px;
+}
+
+.footer_signUp_title {
+    font-family: 'Lora', serif;
+    color: var(--color-white);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.footer_signUp_content {
+    color: #dfdfdf;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.footer_signUp_btn {
+    background: var(--brand-color-secondary);
+    padding: 17px 60px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.footer_signUp_btn a {
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.footer_signUp_banner {
+    position: relative;
+}
+
+.footer_signUp_banner img {
+    position: relative;
+    z-index: 2;
+}
+
+.footer_signUp_banner::before {
+    position: absolute;
+    content: "";
+    bottom: 10px;
+    height: 200px;
+    width: 200px;
+    background: repeating-linear-gradient(
+        45deg, 
+        var(--brand-color-primary),
+        var(--brand-color-primary) 10%,
+        var(--brand-color-secondary) 10%,
+        var(--brand-color-secondary) 11%
+    );
+    z-index: 0;
+}
+
+.footer_signUp_banner::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    background: repeating-linear-gradient(
+        45deg, 
+        var(--brand-color-primary),
+        var(--brand-color-primary) 10%,
+        var(--brand-color-secondary) 10%,
+        var(--brand-color-secondary) 11%
+    );
+    z-index: 0;
+}
+
 /* footer */
 
 .footer {
@@ -882,12 +990,9 @@ img {
     line-height: 26px;
 }
 
-.footer_brand_icon {
+.footer_brand_icon a {
     color: var(--color-white);
     font-size: 22px;
-}
-
-.footer_brand_icon i {
     padding: 0px 20px;
 }
 

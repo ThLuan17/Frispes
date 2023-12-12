@@ -16,6 +16,12 @@
 }
 
 @media (max-width: 768px) {
+    .navbar .container {
+        display: flex;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
     .navbar_menu_list {
         display: none;
     }
@@ -60,5 +66,9 @@
 
     .news_heading_box {
         display: block;
+    }
+
+    .footer_signUp {
+        padding-bottom: 50px;
     }
 }
