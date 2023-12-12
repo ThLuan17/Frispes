@@ -1,0 +1,64 @@
+@media (max-width: 1200px) {
+    .navbar_menu_list {
+        display: none;
+    }
+
+    .banner_box, .banner_box img {
+        width: 100%;
+    }
+    
+    .owl-nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateY(-50px);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar_menu_list {
+        display: none;
+    }
+
+    .banner_box, .banner_box img {
+        width: 100%;
+    }
+    
+    .about_header {
+        display: block;
+    }
+    
+    .about_company_heading {
+        font-size: 40px;
+        width: 100%;
+    }
+    
+    .about_company_carousel_heading {
+        font-size: 40px;
+        width: 100%;
+    }
+    
+    .about_company_line_box {
+        display: none;
+    }
+    
+    .about_company_tabs_item_list {
+        padding: 0;
+    }
+
+    .about_reviews_heading {
+        width: 100%;
+    }
+    
+    .about_content_left_box {
+        justify-content: center;
+    }
+
+    .news_heading {
+        padding-bottom: 20px;
+    }
+
+    .news_heading_box {
+        display: block;
+    }
+}
